@@ -1,0 +1,24 @@
+.register__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__text{
+    max-width: 500px;
+}
+
+@media(max-width: 768px){
+    .register__container{
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }    
+    .register__text{
+        width: 100%;
+        text-align: center;
+    }
+    .register__form{
+        width: 100%;
+    }
+}

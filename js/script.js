@@ -136,7 +136,7 @@
     });
 
     var swiper = new Swiper(".swiper-slideshow", {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 0,
       speed: 700,
       loop: true,
