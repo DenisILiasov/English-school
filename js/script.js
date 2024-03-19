@@ -136,10 +136,12 @@
     });
 
     var swiper = new Swiper(".swiper-slideshow", {
-      slidesPerView: 1,
+      slidesPerView: 3,
       spaceBetween: 0,
       speed: 700,
       loop: true,
+      
+
       navigation: {
         nextEl: '.swiper-slideshow .swiper-right',
         prevEl: '.swiper-slideshow .swiper-left',
@@ -149,6 +151,7 @@
         clickable: true,
       },
     });
+
 
     $(".youtube").colorbox({
       iframe: true,
