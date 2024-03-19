@@ -1,0 +1,32 @@
+.start__title{
+    font-size: 4rem;
+}
+
+.start__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.start__image{
+    border-radius: 30px;
+}
+
+
+@media(max-width: 1200px){
+    .start__container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .start__title{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px){
+    .start__title{
+        font-size: 2.3rem;
+    }
+}
