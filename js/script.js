@@ -87,6 +87,17 @@
       }
     });
 
+    $(document).ready(function () {
+
+      var sertificait__slider_swiper = new Swiper(".sertificait__slider", {
+        slidesPerView: 1,
+        speed: 500,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    })
     // product single page
     var thumb_slider = new Swiper(".product-thumbnail-slider", {
       loop: true,
