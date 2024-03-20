@@ -24,12 +24,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/start.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/course.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/register.css">
+
   </head>
   <body>
 
@@ -112,25 +116,46 @@
     </svg>
 
      <!-- Header  -->
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch"aria-labelledby="Search">
-      <div class="offcanvas-header mt-3">
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="order-md-last">
-          <h4 class="text-primary text-uppercase mb-3">
-            Search
-          </h4>
-          <div class="search-bar border rounded-2 border-dark-subtle">
-            <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
-              <input type="text" class="form-control border-0 bg-transparent" placeholder="Search Here" />
-              <iconify-icon icon="tabler:search" class="fs-4 me-3"></iconify-icon>
-            </form>
-          </div>
+    <header class="header">
+      <div class="header__menu__blur"></div>
+      <div class="header__container">
+        <div class="header__logo">
+          <img width="80" height="80" src="images/logo.jpg" alt="logo">
         </div>
+        <nav class="header__menu">
+          <div class="burger">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="header__menu__container">
+            <div class="header__menu__clouse">
+              &#10006;
+            </div>
+            <div class="header__menu__logo">
+              <img width="100" height="100" src="images/logo.jpg" alt="logo">
+            </div>
+            <ul class="header__menu__items">
+              <li class="header__menu__item">
+                <a href="#features">Обо мне</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="#courses">Программы</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="#testimonial">Отзывы</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="#register">Контакты</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="#footer">Сертификаты</a>
+              </li>
+          </ul>
+          </div>
+          
+        </nav>
       </div>
-    </div>
-    <nav class="main-menu d-flex navbar navbar-expand-lg p-2 py-3 p-lg-4 py-lg-4 ">
+    </header>
+    <!-- <nav class="main-menu d-flex navbar navbar-expand-lg p-2 py-3 p-lg-4 py-lg-4 ">
       <div class="container-fluid justify-content-end">
         <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -164,7 +189,7 @@
             </div>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- Header -->
 
     <!-- Start -->
@@ -238,7 +263,7 @@
                   <svg width="68" height="48" viewBox="0 0 68 48"><path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path class="video__button-icon" d="M 45,24 27,14 27,34"></path></svg>
               </button>
             </div>
-            <!-- <iframe  src="https://www.youtube.com/embed/OjnhkRSMRq8?si=BVNKwKjl4AjCPr-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+           
           </div>
           <div class="col-md-5 mt-5 mt-md-0">
             <div class="mb-3">
@@ -265,7 +290,6 @@
               </svg>
               <p class="ps-4">Подготовка к ЕГЭ</p>
             </div>
-            <a href="about.html" class="btn btn-primary px-5 py-3 mt-4">Learn more</a>
           </div>
         </div>
       </div>
@@ -293,18 +317,6 @@
                 <a href="courses-details.html">
                   <h5 class="course-title py-2 m-0">Mastering the Art of Digital Communication</h5>
                 </a>
-
-                <div class="card-text">
-                  <span class="rating d-flex align-items-center mt-3">
-                    <p class="text-muted fw-semibold m-0 me-2">By: James Willam</p>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                  </span>
-                </div>
-
               </div>
             </div>
           </div>
@@ -321,16 +333,7 @@
                   <h5 class="course-title py-2 m-0">Web Wizardry 101: Mastering the Internet</h5>
                 </a>
 
-                <div class="card-text">
-                  <span class="rating d-flex align-items-center mt-3">
-                    <p class="text-muted fw-semibold m-0 me-2">By: James Willam</p>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                  </span>
-                </div>
+              
 
               </div>
             </div>
@@ -349,16 +352,6 @@
                   <h5 class="course-title py-2 m-0">E-Learning Essentials: A Comprehensive Guide</h5>
                 </a>
 
-                <div class="card-text">
-                  <span class="rating d-flex align-items-center mt-3">
-                    <p class="text-muted fw-semibold m-0 me-2">By: James Willam</p>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                  </span>
-                </div>
 
               </div>
             </div>
@@ -377,16 +370,7 @@
                   <h5 class="course-title py-2 m-0">CyberClass 101: A Guide to Online Education</h5>
                 </a>
 
-                <div class="card-text">
-                  <span class="rating d-flex align-items-center mt-3">
-                    <p class="text-muted fw-semibold m-0 me-2">By: James Willam</p>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                  </span>
-                </div>
+           
 
               </div>
             </div>
@@ -405,17 +389,7 @@
                   <h5 class="course-title py-2 m-0">Mastering the Art of Digital Communication</h5>
                 </a>
 
-                <div class="card-text">
-                  <span class="rating d-flex align-items-center mt-3">
-                    <p class="text-muted fw-semibold m-0 me-2">By: James Willam</p>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                  </span>
-                </div>
-
+              
               </div>
             </div>
           </div>
@@ -433,16 +407,7 @@
                   <h5 class="course-title py-2 m-0">Web Wizardry 101: Mastering the Internet</h5>
                 </a>
 
-                <div class="card-text">
-                  <span class="rating d-flex align-items-center mt-3">
-                    <p class="text-muted fw-semibold m-0 me-2">By: James Willam</p>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                  </span>
-                </div>
+               
 
               </div>
             </div>
@@ -461,16 +426,6 @@
                   <h5 class="course-title py-2 m-0">E-Learning Essentials: A Comprehensive Guide</h5>
                 </a>
 
-                <div class="card-text">
-                  <span class="rating d-flex align-items-center mt-3">
-                    <p class="text-muted fw-semibold m-0 me-2">By: James Willam</p>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                  </span>
-                </div>
 
               </div>
             </div>
@@ -489,16 +444,7 @@
                   <h5 class="course-title py-2 m-0">CyberClass 101: A Guide to Online Education</h5>
                 </a>
 
-                <div class="card-text">
-                  <span class="rating d-flex align-items-center mt-3">
-                    <p class="text-muted fw-semibold m-0 me-2">By: James Willam</p>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                    <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                  </span>
-                </div>
+              
 
               </div>
             </div>
@@ -571,8 +517,8 @@
           <div class="col-sm-6 col-lg-4 my-3">
             <div class="footer-menu">
               <a href="index.html">
-                <img src="images/logo.png" alt="logo" class="img-fluid">
-              </a>
+                <img width="80" height="80" src="images/logo.jpg" alt="logo" class="img-fluid">
+              </a> 
               <div class="social-links mt-4">
                 <ul class="d-flex list-unstyled ">
                   <li class="me-4">
@@ -704,5 +650,6 @@
     <script src="js/script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="js/video.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
