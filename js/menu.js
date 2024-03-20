@@ -4,10 +4,14 @@ const clouseButtonMenu = document.querySelector('.header__menu__clouse');
 const menuBlur = document.querySelector('.header__menu__blur');
 const menuContainer = document.querySelector('.header__menu__container');
 const link = document.querySelectorAll('.header__menu__item');
+const body = document.body;
+
+
 
 const openOrClouseMenu = () => {
     menu.classList.toggle('menu__active');
-    menuBlur.classList.toggle('blur__active')
+    menuBlur.classList.toggle('blur__active');
+    body.classList.toggle('hidden');
 }
 
 menuContainer.addEventListener('click', (e) => {
@@ -15,7 +19,10 @@ menuContainer.addEventListener('click', (e) => {
 });
 
 link.forEach(el => {
-    el.addEventListener('click', openOrClouseMenu)
+    if(window.innerWidth <= 991){
+        el.addEventListener('click', openOrClouseMenu)
+    }
+
 })
 
 menuBlur.addEventListener('click', openOrClouseMenu);

@@ -1,0 +1,35 @@
+.footer{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__sertificats button{
+    background-color: #4CC082;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Inter';
+    transition: all 0.3s;
+}
+
+.footer__sertificats button:hover{
+    background-color: #46ad76;
+}
+
+.contacts__items{
+    padding: 0;
+    margin: 0;
+}
+.contacts__items ol{
+    padding: 0;
+    margin: 0;
+}
+

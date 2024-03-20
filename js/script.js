@@ -67,24 +67,22 @@
   $(document).ready(function () {
 
     var testimonial_swiper = new Swiper(".testimonial-swiper", {
-      slidesPerView: 3,
+      slidesPerView: 2,
       speed: 500,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
       breakpoints: {
-        320: {
+        300: {
           slidesPerView: 1,
-          spaceBetween: 20
         },
-        550: {
-          slidesPerView: 2,
-          spaceBetween: 30
+        991: {
+          slidesPerView: 1,
         },
         1200: {
-          slidesPerView: 3,
-          spaceBetween: 40
+          slidesPerView: 2,
+          spaceBetween: 60
         }
       }
     });
@@ -110,7 +108,7 @@
 
 
     var swiper = new Swiper(".swiper-carousel", {
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 30,
       navigation: {
         nextEl: '.swiper-carousel .swiper-right',
