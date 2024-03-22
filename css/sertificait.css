@@ -1,0 +1,20 @@
+
+.sertificait{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.sertificait__image{
+    text-align: center;
+}
+
+.sertificait__image img{
+    max-height: 700px;
+}
+
+@media(max-width: 1060px){
+    .sertificait__image img{
+        width: 100%;
+    }
+}

@@ -1,3 +1,20 @@
 .slids__container{
     text-align: center;
 }
+
+
+.testimonial{
+    padding: 50px 0;
+}
+
+.feedback{
+    padding: 50px 0;
+}
+
+.video__feedback__title{
+    margin: 0 0 3rem 0;
+}
+
+.feedback__video{
+    max-height: 500px;
+}

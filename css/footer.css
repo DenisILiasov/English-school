@@ -20,14 +20,18 @@
     margin: 0;
 }
 
-.sertificait__image{
-    text-align: center;
+.footer__menu{
+    min-width: 200px;
 }
 
-.sertificait__image img{
-    width: 100%;
-    max-height: 700px;
+.footer__menu__item{
+    transition: all 0.3s;
 }
+
+.footer__menu__item:hover{
+    color: #104e9a;
+};
+
 
 @media(max-width: 676px){
     .footer__container{
