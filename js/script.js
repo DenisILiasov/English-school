@@ -85,30 +85,7 @@
           spaceBetween: 20
         }
       }
-    });
-    var testimonial_swiper = new Swiper(".testimonial-swiper", {
-      slidesPerView: 3,
-      speed: 500,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20
-        },
-        550: {
-          slidesPerView: 2,
-          spaceBetween: 30
-        },
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 40
-        }
-      }
-    });
-    
+    });  
     $(document).ready(function () {
 
       var sertificait__slider_swiper = new Swiper(".sertificait__slider", {

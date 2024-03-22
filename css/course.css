@@ -5,8 +5,13 @@
 .course-title{
     font-size: 14px;
     text-align: center;
+    text-transform: none;
 }
 
 .course__name__container{
     margin: 20px 0;
+}
+
+.course__image{
+    text-align: center;
 }

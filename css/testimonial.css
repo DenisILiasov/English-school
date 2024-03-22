@@ -1,0 +1,32 @@
+
+.testimonial__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.testimonial__image__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.testimonial__image__container img{
+    height: 70px;
+}
+
+
+
+@media(max-width: 1200px){
+    .testimonial__item{
+        max-width: 500px;
+    }
+
+    .testimonial__container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+}
