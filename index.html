@@ -597,7 +597,8 @@
               </div>
             </div>
             <div class="col-md-5 register__form">
-              <form id="form">
+              <form id="form"  action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                 <input required type="text" name="email" placeholder="Ваше имя"
                   class="form-control bg-white border-0 rounded-4 shadow-none rounded-pill text-center px-4 py-3 w-100 mb-4">
                 <input required type="text" name="email" placeholder="Ваш телефон"
@@ -605,7 +606,7 @@
                 <input required type="email" name="email" placeholder="Ваша почта"
                   class="form-control bg-white border-0 rounded-4 shadow-none rounded-pill text-center px-4 py-3 w-100 mb-4">
                 <div class="d-grid">
-                  <button class="btn btn-primary px-5 py-3">Отправить</button>
+                  <button type="submit" class="btn btn-primary px-5 py-3">Отправить</button>
                 </div>
               </form>
             </div>
