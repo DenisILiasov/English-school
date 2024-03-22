@@ -80,6 +80,10 @@
     display: block;
 }
 
+.about__title{
+    text-transform: none;
+}
+
 @media(max-width: 1200px) {
     .about__container{
         flex-direction: column;

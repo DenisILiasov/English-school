@@ -15,3 +15,8 @@
 .course__image{
     text-align: center;
 }
+
+.course__title{
+    text-transform: none ;
+}
+
