@@ -84,6 +84,15 @@
     text-transform: none;
 }
 
+.about__slider__container{
+    width: 100%;
+    height: 100%;
+}
+
+.about__video video{
+    width: 100%;
+}
+
 @media(max-width: 1200px) {
     .about__container{
         flex-direction: column;
